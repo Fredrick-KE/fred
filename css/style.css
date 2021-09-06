@@ -640,10 +640,7 @@ h2.resp-accordion {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	position: absolute;
-	top: -50px;
-	right: -50px;
-	left: Calc(50% - 50px);
+	
 }
 .about-imag img {
 	border: 2px solid #ef664d;

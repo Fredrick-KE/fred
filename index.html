@@ -655,6 +655,66 @@ td{ font-size:15px;color:#00a100;font-family:Verdana,Arial,sans-serif;font-weigh
 					<div class="col-md-8 contactgrid1">
 						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
 					</div>
+
+
+				
+					<div>
+						import React, { useState } from 'react';
+
+interface Message {
+  text: string;
+  isUser: boolean;
+}
+
+const Chatbot = () => {
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState('');
+
+  const handleSendMessage = () => {
+    if (input.trim() !== '') {
+      setMessages((prevMessages) => [...prevMessages, { text: input, isUser: true }]);
+      setInput('');
+      setTimeout(() => {
+        setMessages((prevMessages) => [...prevMessages, { text: `Hello, I received your message: ${input}`, isUser: false }]);
+      }, 1000);
+    }
+  };
+
+  return (
+    <div className="max-w-md mx-auto p-4 bg-gray-100 rounded-md shadow-md">
+      <h2 className="text-lg font-bold mb-4">Chatbot</h2>
+      <div className="flex flex-col overflow-y-auto max-h-80 mb-4">
+        {messages.map((message, index) => (
+          <div key={index} className={`p-2 ${message.isUser ? 'bg-blue-500 text-white ml-auto' : 'bg-gray-300 text-gray-600 mr-auto'} rounded-md mb-2`}>
+            {message.text}
+          </div>
+        ))}
+      </div>
+      <div className="flex">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="w-full p-2 pl-4 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+          placeholder="Type a message..."
+        />
+        <button
+          onClick={handleSendMessage}
+          className="ml-2 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-500"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Chatbot;
+					</div>
+
+
+
+					
 					<div class="col-md-4 contactgrid2">
 						<input type="submit" value="[send message]">
 						<script async id="slcLiveChat" src="https://widget.sonetel.com/SonetelWidget.min.js" data-account-id="208376869"></script>

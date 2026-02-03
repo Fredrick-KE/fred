@@ -1726,7 +1726,7 @@
                 </div>
                 <div class="testimonial animate-on-scroll fade-right">
                     <div class="testimonial-text">
-                        "I write code to make the world a better place. I'm not the greatest programmer, I'm just a good programmer with great habits. Innovation through dedication."
+                        "I write code to make the world a better place. I'm not the greatest programmer; I'm just a good programmer with great habits. Innovation through dedication."
                     </div>
                     <div class="testimonial-author">- Fredrick Njuguna, Full-Stack Developer</div>
                 </div>
@@ -1736,9 +1736,17 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Code_With_Fredrick. All Rights Reserved | Crafted with ❤️ by Fredrick Njuguna</p>
-        </div>
+       <div class="container">
+    <p>
+        &copy; <span id="year"></span> Code_With_Fredrick. 
+        All Rights Reserved |Powered by Linux Terminal
+    </p>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
     </footer>
 
     <!-- Scroll to Top Button -->

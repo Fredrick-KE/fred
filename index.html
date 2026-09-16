@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="icon" href="images/img1.png" type="image/gif" sizes="16x16">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Tags -->
@@ -41,7 +41,7 @@
         "@type": "CollegeOrUniversity",
         "name": "Kenyatta University"
       },
-      "knowsAbout": ["Full-Stack Development","PHP","Laravel","C#",".NET","REST APIs","SOAP APIs","JWT Authentication","Acumatica ERP","n8n Workflow Automation","MySQL","SQL Server","SQLite","TiDB","Snowflake","Power BI","Python","JavaScript","Cybersecurity","Cisco CCNA","Huawei HCIA-Security"],
+      "knowsAbout": ["Full-Stack Development","PHP","Laravel","C#",".NET","REST APIs","SOAP APIs","JWT Authentication","Acumatica ERP","n8n Workflow Automation","MySQL","SQL Server","SQLite","TiDB","Snowflake","Power BI","Python","JavaScript","TypeScript","Next.js","Cybersecurity","Cisco CCNA","Huawei HCIA-Security"],
       "sameAs": [
         "https://www.linkedin.com/in/fredrick-njuguna-010126381",
         "https://github.com/Fredrick-Ke",
@@ -316,7 +316,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231e293b'/%3E%3Ctext x='100' y='120' font-size='80' text-anchor='middle' fill='%233b82f6' font-family='monospace'%3E%3C/%3E%3C/svg%3E" alt="Fredrick Njuguna" class="profile-image">
+                <img src="silicon.jpg" width="150" alt="Fredrick Njuguna" class="profile-image">
                 <div class="code-window">
                     <div class="code-header"><div class="code-dot red"></div><div class="code-dot yellow"></div><div class="code-dot green"></div></div>
                     <div class="code-content">
@@ -407,7 +407,8 @@
                 </div>
 
                 <div class="project-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=200&fit=crop" alt="Narok VTC Management System" class="project-image">
+                    <!-- Updated image for Narok VTC -->
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=200&fit=crop" alt="Narok VTC Management System" class="project-image">
                     <div class="project-header">
                         <h3 class="project-title">Narok VTC Management System</h3>
                         <p class="project-category">College Management System</p>
@@ -432,7 +433,7 @@
                     <div class="project-body">
                         <p>Property listings website enabling clients to browse real estate and contact the agency online. <strong>Impact:</strong> Expanded online visibility and centralized listing platform.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JavaScript</span><span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Python</span><span class="tech-tag">Flask/Django</span><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span>
                         </div>
                         <div class="project-links">
                             <a href="https://greiceproperties.co.ke" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Site</a>
@@ -449,7 +450,7 @@
                     <div class="project-body">
                         <p>Corporate website communicating services and value proposition. <strong>Impact:</strong> Strengthened professional online presence and client engagement.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JavaScript</span><span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Laravel</span><span class="tech-tag">CDN</span><span class="tech-tag">MySQL</span><span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
                             <a href="https://archstonekenya.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Site</a>
@@ -466,7 +467,7 @@
                     <div class="project-body">
                         <p>School website hosted on Vercel, providing information on programs and activities. <strong>Impact:</strong> Improved accessibility and communication with the community.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">Vercel</span><span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">TypeScript</span><span class="tech-tag">Next.js</span><span class="tech-tag">Vercel</span><span class="tech-tag">Tailwind CSS</span>
                         </div>
                         <div class="project-links">
                             <a href="https://darul-ilmi-academy.vercel.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Site</a>
@@ -505,7 +506,7 @@
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3 class="service-title">Full-Stack Development</h3>
-                    <p class="service-description">Custom web apps with PHP, Laravel, JavaScript, and modern frontends. From responsive UI to robust backend systems deployed on Vercel, IIS, or Linux.</p>
+                    <p class="service-description">Custom web apps with PHP, Laravel, JavaScript, TypeScript, Next.js, and modern frontends. From responsive UI to robust backend systems deployed on Vercel, IIS, or Linux.</p>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon"><i class="fas fa-database"></i></div>
@@ -631,20 +632,6 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-
-        // Skill progress counter
-        const skillItems = document.querySelectorAll('.skill-item');
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const levelEl = entry.target.querySelector('.skill-level');
-                    if (levelEl && levelEl.textContent.includes('—')) {
-                        // just display as-is since it's descriptive text
-                    }
-                }
-            });
-        });
-        skillItems.forEach(item => skillObserver.observe(item));
 
         // Smooth nav (placeholder for mobile menu links)
         document.querySelectorAll('.nav-link').forEach(link => {
